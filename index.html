@@ -5,16 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 
 <body>
-    <div>
-        <button onclick="sobre()">Mostrar Sobre</button>
-        <button onclick="text()">Mostrar Text</button>
-        <button onclick="counter()">Mostrar Contador</button>
-        <button onclick="ppt()">Mostrar ppt</button>
+
+    <div class="container">
+        <header class="d-flex justify-content-center py-3">
+            <ul class="nav nav-pills">
+                <li class="nav-item"><button onclick="sobre()" class="nav-link active" aria-current="page">Sobre</a>
+                </li>
+                <li class="nav-item"><button onclick="text()" class="nav-link">Texto</a></li>
+                <li class="nav-item"><button onclick="counter()" class="nav-link">Contador</a></li>
+                <li class="nav-item"><button onclick="ppt()" class="nav-link">Pedra, Papel e tesoura</a></li>
+                <li class="nav-item"><button href="#" class="nav-link">About</a></li>
+            </ul>
+        </header>
     </div>
     <div id="sobre">
         <img>
@@ -24,30 +33,34 @@
 
     <div id="text">
         <h1>Lorem</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            ex ea commodo consequat. Duis aute
+            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+            sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
 
     <div id="Counter">
         <h1 id="num">0</h1>
-        <button onclick="add()">Adiciona 1</button>
-        <button onclick="sub()">Subtrai 1</button>
+        <button onclick="add()" class="btn btn-secondary">Adiciona 1</button>
+        <button onclick="sub()" class="btn btn-secondary">Subtrai 1</button>
     </div>
     <div id="ppt">
         <h1>Pedra Papel e Tesoura</h1>
-        <button onclick="pedra()">Pedra</button>
-        <button onclick="papel()">Papel</button>
-        <button onclick="tesoura()">Tesoura</button>
+        <button onclick="pedra()" class="btn btn-secondary">🗿</button>
+        <button onclick="papel()" class="btn btn-secondary">📓</button>
+        <button onclick="tesoura()" class="btn btn-secondary">✂</button>
 
         <div>
-            <h2>A Ia selecionou</h2>
+            <h2>A IA selecionou</h2>
             <p id="ia"></p>
             <h2>Você escolheu</h2>
             <p id="player"></p>
             <h1 id="resultado"></h1>
         </div>
     </div>
-    <button onclick="mudaCor()">muda a cor de fundo</button>
+    <button onclick="mudaCor()" class="btn btn-secondary">Muda a cor de fundo</button>
+    <button onclick="reset()" class="btn btn-secondary">Reseta a cor de Fundo</button>
     <script type="text/javascript" src="script.js"></script>
 </body>
 

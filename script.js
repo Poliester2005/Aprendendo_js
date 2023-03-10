@@ -96,6 +96,26 @@ function pedra() {
             document.getElementById('resultado').innerHTML = 'Você venceu'
             break
     }
+}
 
-    console.log(ia)
+function papel() {
+    var ia = Math.floor(Math.random() * 3)
+
+    switch (ia) {
+        case 0:
+            document.getElementById('ia').innerHTML = 'Papel'
+            document.getElementById('player').innerHTML = 'Papel'
+            document.getElementById('resultado').innerHTML = 'Empate'
+            break
+        case 1:
+            document.getElementById('ia').innerHTML = 'Pedra'
+            document.getElementById('player').innerHTML = 'Papel'
+            document.getElementById('resultado').innerHTML = 'Você venceu'
+            break
+        case 2:
+            document.getElementById('ia').innerHTML = 'Tesoura'
+            document.getElementById('player').innerHTML = 'Papel'
+            document.getElementById('resultado').innerHTML = 'Você perdeu'
+            break
+    }
 }
