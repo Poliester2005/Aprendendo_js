@@ -1,3 +1,5 @@
+//? Função de cor
+
 function mudaCor() {
     var cor = Math.floor(Math.random() * 16777215).toString(16);
     document.body.style.backgroundColor = '#' + cor
@@ -17,6 +19,13 @@ function mudaCor() {
     }
 
 }
+
+function reset(){
+    document.body.style.textAlign = 'center'
+    document.body.style.backgroundColor = 'white'
+}
+
+//? Funções contador
 
 function add() {
     var num = parseInt(document.getElementById('num').innerHTML)
@@ -48,33 +57,7 @@ function sub() {
     console.log
 }
 
-function sobre() {
-    document.getElementById('sobre').style.display = 'block'
-    document.getElementById('text').style.display = 'none'
-    document.getElementById('Counter').style.display = 'none'
-    document.getElementById('ppt').style.display = 'none'
-}
-
-function text() {
-    document.getElementById('sobre').style.display = 'none'
-    document.getElementById('text').style.display = 'block'
-    document.getElementById('Counter').style.display = 'none'
-    document.getElementById('ppt').style.display = 'none'
-}
-
-function counter() {
-    document.getElementById('sobre').style.display = 'none'
-    document.getElementById('text').style.display = 'none'
-    document.getElementById('Counter').style.display = 'block'
-    document.getElementById('ppt').style.display = 'none'
-}
-
-function ppt() {
-    document.getElementById('sobre').style.display = 'none'
-    document.getElementById('text').style.display = 'none'
-    document.getElementById('Counter').style.display = 'none'
-    document.getElementById('ppt').style.display = 'block'
-}
+//? funções PPT
 
 function pedra() {
     var ia = Math.floor(Math.random() * 3)
@@ -118,4 +101,56 @@ function papel() {
             document.getElementById('resultado').innerHTML = 'Você perdeu'
             break
     }
+}
+
+function tesoura() {
+    var ia = Math.floor(Math.random() * 3)
+
+    switch (ia) {
+        case 0:
+            document.getElementById('ia').innerHTML = 'Papel'
+            document.getElementById('player').innerHTML = 'Tesoura'
+            document.getElementById('resultado').innerHTML = 'Você venceu'
+            break
+        case 1:
+            document.getElementById('ia').innerHTML = 'Pedra'
+            document.getElementById('player').innerHTML = 'Tesoura'
+            document.getElementById('resultado').innerHTML = 'Você perdeu'
+            break
+        case 2:
+            document.getElementById('ia').innerHTML = 'Tesoura'
+            document.getElementById('player').innerHTML = 'Tesoura'
+            document.getElementById('resultado').innerHTML = 'Empate'
+            break
+    }
+}
+
+//! botões de carrosel
+
+function sobre() {
+    document.getElementById('sobre').style.display = 'block'
+    document.getElementById('text').style.display = 'none'
+    document.getElementById('Counter').style.display = 'none'
+    document.getElementById('ppt').style.display = 'none'
+}
+
+function text() {
+    document.getElementById('sobre').style.display = 'none'
+    document.getElementById('text').style.display = 'block'
+    document.getElementById('Counter').style.display = 'none'
+    document.getElementById('ppt').style.display = 'none'
+}
+
+function counter() {
+    document.getElementById('sobre').style.display = 'none'
+    document.getElementById('text').style.display = 'none'
+    document.getElementById('Counter').style.display = 'block'
+    document.getElementById('ppt').style.display = 'none'
+}
+
+function ppt() {
+    document.getElementById('sobre').style.display = 'none'
+    document.getElementById('text').style.display = 'none'
+    document.getElementById('Counter').style.display = 'none'
+    document.getElementById('ppt').style.display = 'block'
 }

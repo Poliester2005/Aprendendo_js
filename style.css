@@ -8,6 +8,11 @@ body {
     background-color: white;
 }
 
+#buttons {
+    margin-top: 20px;
+}
+
+
 #sobre {
     display: none;
 }
