@@ -1,10 +1,10 @@
 //? Função de cor
 
 function mudaCor() {
-    var cor = Math.floor(Math.random() * 16777215).toString(16);
+    let cor = Math.floor(Math.random() * 16777215).toString(16);
     document.body.style.backgroundColor = '#' + cor
 
-    var align = (Math.floor(Math.random() * 3))
+    let align = (Math.floor(Math.random() * 3))
 
     switch (align) {
         case 0:
@@ -28,7 +28,7 @@ function reset(){
 //? Funções contador
 
 function add() {
-    var num = parseInt(document.getElementById('num').innerHTML)
+    let num = parseInt(document.getElementById('num').innerHTML)
     document.getElementById('num').innerHTML = num + 1
     num = parseInt(document.getElementById('num').innerHTML)
 
@@ -42,7 +42,7 @@ function add() {
 }
 
 function sub() {
-    var num = parseInt(document.getElementById('num').innerHTML)
+    let num = parseInt(document.getElementById('num').innerHTML)
     document.getElementById('num').innerHTML = num - 1
     num = parseInt(document.getElementById('num').innerHTML)
 
@@ -60,7 +60,7 @@ function sub() {
 //? funções PPT
 
 function pedra() {
-    var ia = Math.floor(Math.random() * 3)
+    let ia = Math.floor(Math.random() * 3)
 
     switch (ia) {
         case 0:
@@ -82,7 +82,7 @@ function pedra() {
 }
 
 function papel() {
-    var ia = Math.floor(Math.random() * 3)
+    let ia = Math.floor(Math.random() * 3)
 
     switch (ia) {
         case 0:
@@ -104,7 +104,7 @@ function papel() {
 }
 
 function tesoura() {
-    var ia = Math.floor(Math.random() * 3)
+    let ia = Math.floor(Math.random() * 3)
 
     switch (ia) {
         case 0:
